@@ -26,13 +26,13 @@ simple_api_unstable = [ "winit", "pollster", "imgui-winit-support" ]
 
 [dependencies]
 bytemuck = "1"
-imgui = "0.7"
+imgui = { git = "https://github.com/imgui-rs/imgui-rs" }
 log = "0.4"
 smallvec = "1"
 wgpu = "0.8.1"
 
 # deps for simple_api_unstable
-imgui-winit-support = { version = "0.7", optional = true }
+imgui-winit-support = { git = "https://github.com/imgui-rs/imgui-rs", optional = true }
 pollster = { version = "0.2.0", optional = true } # for block_on executor
 winit = { version = ">= 0.23, < 0.25", optional = true }
 
@@ -41,7 +41,7 @@ bytemuck = { version = "1.4", features = ["derive"] }
 cgmath = "0.18"
 futures = "0.3"
 image = "0.23"
-imgui-winit-support = "0.7"
+imgui-winit-support = { git = "https://github.com/imgui-rs/imgui-rs" }
 raw-window-handle = "0.3"
 wgpu-subscriber = "0.1"
 winit = "0.24"
